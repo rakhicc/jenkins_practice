@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/styles/styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1><%= header %></h1>
+      <form action="<%= action %>" method="POST">
+        <div>
+          <p>
+            <label for="bookID">bookID</label>
+            <input
+              type="text"
+              id="bookID"
+              name="bookID"
+              size="5"
+              value="<%= bookID.value %>"
+              <%= bookID.readonly
+              %>
+            >
+           
+          </p>
+          <p>
+            <label for="name">name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              size="50"
+              value="<%= name.value %>"
+              <%= name.readonly
+              %>
+            >
+            
+          </p>
+          <p>
+            <label for="author">author</label>
+            <input
+              type="text"
+              id="author"
+              name="author"
+              size="50"
+              value="<%= author.value %>"
+              <%= author.readonly
+              %>
+            >
+            
+          </p>
+          <p>
+            <label for="topic">topic</label>
+            <input type="text" id="topic" name="topic" size=20"
+            value="<%= topic.value %>" <%= topic.readonly %> >
+          </p>
+          <p>
+            <label for="numberOfBooks">numberOfBooks</label>
+            <input
+              type="text"
+              id="numberOfBooks"
+              name="numberOfBooks"
+              size="10"
+              value="<%= numberOfBooks.value %>"
+              <%= numberOfBooks.readonly
+              %>
+            >
+            
+          </p>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+      <a href="/"><button>Menu</button></a>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+input[readonly]{
+    background-color:rgb(240, 182, 182);
+  }
+  main,form{
+    display:grid;
+    align-items:center;
+    justify-items: center;
+  }
+  table{
+    border-collapse:collapse;
+    margin-bottom: 1rem;
+  }
+  table, th,td{
+  border:solod black 1px;
+  padding:0.5rem;
+  margin:3rem;
+  }
+  thead{
+    background-color: rgb(131, 187, 27);
+    
+  }
+  table, tr,td{
+    margin:1rem;
+    text-align: center;
+
+  }
+  button{
+    font-family:  sans-serif;
+    width:13rem;
+    height:2rem;
+    margin:1rem;
+    padding: 3rem;
+    background-color: rgb(143, 202, 236);
+  }
+  p.info{
+    border:solid green 2px;
+    padding:1rem;
+  }
+  p.error{
+    border:dashed red 2px;
+    padding:1rem;
+  }
+  h1.error{
+    color:red;
+  }
+  label {
+    display: inline-block;
+    width: 40%;
+    color: var(--color_text);
+    font-size: 1.25rem;
+   
+  }
+  p{
+    font-size:2rem;
+    font-family: sans-serif;
+  }
+  input,
+  textarea {
+    
+    border-radius: 5px;
+    border: solid;
+    width: 300px;
+    font-family: sans-serif;
+    font-size: 1.5rem;;
+  }
+  form div p {
+      padding: 20px;
+    
+  }
+  button{
+    width: 200px;
+    background-color: rgb(139, 46, 11);
+    color: white;
+    font-size: inherit;
+    text-shadow: 0 0 5px blue;
+    box-shadow: 0 0 5px white;
+    transition: width 2s;
+    padding:2rem;
+    padding-top: 1rem;;
+  }
+  

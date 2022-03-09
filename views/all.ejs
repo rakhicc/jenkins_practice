@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get All</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
+</head>
+<body>
+  <main>
+      <h1>Get all</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>bookID</th>
+            <th>name</th>
+            <th>author</th>
+            <th>topic</th>
+            <th>numberOfBooks</th>
+          </tr>
+        </thead>
+        <tbody>
+            <% results.forEach(result =>{ %>
+<tr><td><%= result.bookID %></td>
+    <td><%= result.name %></td>
+    <td><%= result.author %></td>
+    <td><%= result.topic %></td>
+    <td><%= result.numberOfBooks %></td>
+</tr>
+            <%}) %>
+
+
+        </tbody>
+        </table>
+        <a href="/"><button>Menu</button></a>
+  </main>  
+</body>
+</html>
